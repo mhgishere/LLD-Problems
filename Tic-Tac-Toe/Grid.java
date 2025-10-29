@@ -6,11 +6,11 @@ import java.util.HashMap;
 
 public class Grid {
     private char[][] grid;
-    int n;
-    Map<Piece, List<Integer>> rowCount = new HashMap<>();
-    Map<Piece, List<Integer>> columnCount = new HashMap<>();
-    Map<Piece, Integer> diagnol1 = new HashMap<>();
-    Map<Piece, Integer> diagnol2 = new HashMap<>();
+    private int n;
+    private Map<Piece, List<Integer>> rowCount = new HashMap<>();
+    private Map<Piece, List<Integer>> columnCount = new HashMap<>();
+    private Map<Piece, Integer> diagnol1 = new HashMap<>();
+    private Map<Piece, Integer> diagnol2 = new HashMap<>();
 
     public Grid(int n) {
         this.n = n;
