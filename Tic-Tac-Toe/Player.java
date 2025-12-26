@@ -1,17 +1,17 @@
 public class Player {
     private String name;
-    private Piece piece;
+    private Symbol symbol;
 
     public void setPlayerInformation(String playerInformation) {
         this.name = playerInformation.substring(2);
-        this.piece = playerInformation.charAt(0) == 'X' ? Piece.X : Piece.O;
+        this.symbol = playerInformation.charAt(0) == 'X' ? Symbol.X : Symbol.O;
     }
 
     public String getName() {
         return name;
     }
 
-    public Piece getPiece() {
-        return piece;
+    public Symbol getSymbol() {
+        return symbol;
     }
 }
